@@ -1,0 +1,1 @@
+module.exports = new require('mongoose').Schema({ name: String })
