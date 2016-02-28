@@ -8,6 +8,7 @@ module.exports = (basePath) ->
   for file in fs.readdirSync basePath
     fileParts = file.match(/(.*)\.(coffee|js)$/)
     return unless fileParts?
-    modules.push mongoose.model(fileParts[1], require(path.join(basePath, fileParts[1])))
+    fullPath = path.join(basePath, fileParts[1])
+    modules.push mongoose.model(fileParts[1], require(fullPath))
 
   modules

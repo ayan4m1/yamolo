@@ -1,5 +1,5 @@
 mongoose = require 'mongoose'
-loader = require '../src/index'
+loader = require '../lib/index'
 
 describe 'the module loader', ->
 
