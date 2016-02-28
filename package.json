@@ -2,7 +2,7 @@
   "name": "yamolo",
   "version": "0.1.0",
   "description": "yet another module loader",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "gulp test"
   },
